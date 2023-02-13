@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tipos de errores en programación</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+
+                <div class="contenido-header">
+                
+                    <img src="recursos/uaeh.png" id="logo"  alt=""> 
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Home</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Introduction</a></li>
+                            <li><a href="#tema1" onclick="seleccionar(this)">Types of errors in programming</a></li>
+                            <li><a href="#tema7" onclick="seleccionar(this)">Cause-effect graphs</a></li>
+                            <li><a href="#tema8" onclick="seleccionar(this)">Conclusion</a></li>
+                            <li><a href="" onclick="seleccionar(this)">Activity</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </header>
+                <div class="presentacion">
+                    <p class="bienvenida">Software Testing</p>
+                    <h2>Types of errors in programming</h2>
+                    <p class="descripcion">Professor: Eder Geovanni Ramirez Corona</p>
+                    <a href="#servicios">Index</a>
+                </div>
+            </div>
+        </section> 
+    
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Index</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Introduction <br>
+                    Types of errors in programming such as: <br>
+                    <a href="#tema1">Syntax</a><br>
+                    <a href="#tema2">Warnings</a> <br>
+                    <a href="#tema3">Execution</a> <br>
+                    <a href="#tema4">Design</a> <br>
+                    <a href="#tema5">Linking errors</a> <br>
+                    <a href="#tema6">Integrity</a> <br>
+                    <a href="#tema7">Cause Effect Graphing</a> <br>
+                    <a href="#tema8">Conclusion </a><br>
+                </h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <!--<li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>-->
+                </ul>
+                <p></p>
+            </div>
+    
+         <!-- SECCION S O B R E M I -->
+       <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="recursos/Errores.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Introduction</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>Like all things created by humans, computer programs and the data they process can contain errors. Errors are conditions that are not part of the normal operation of a program and can be syntax, semantic or execution.</p>
+            <p>Syntax errors are problems with code written by the programmer<br>
+             Semantic errors are problems with algorithms that prevent the expected result from returning<br>
+            Execution errors are conditions that affect the normal operation of the program and can be caused by multiple circumstances<br></p>
+            <p>Our research focuses on the different types of errors in programming as well as the technique of cause-effect graphs</p>
+        </div>
+    </section>
+     
+    <section id="tema1">
+        <div class="contenedor-imagen">
+            <img src="recursos/SyntaxError.png" alt="">
+        </div>
+        <div class="tema1">
+            <p class="titulo-seccion">Syntax Error</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>A syntax error occurs when the program does not meet the language rules. When this error occurs, it means that the program is misspelled. The error name is SyntaxError. </p>
+            <p>Syntax errors always occur before the program is executed. That is, a poorly written program fails to execute any instruction. Thus, the syntax error is no exception.</p>
+        </div>
+    </section>
+
+    <section id="tema2">
+        <div class="contenedor-imagen2">
+            <img src="recursos/warnings.webp" alt="">
+        </div>
+        <div class="tema2">
+            <p class="titulo-seccion">Warnings</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>Warnings are errors, but not serious enough to prevent object code generation.</p>
+            <p>However, it is important to correct these errors most of the time because before a warning the compiler has to make decisions </p>
+            <p>and these do not have to coincide with what we intend to do, they are already based on the directives that compiler creators decided during compiler creation.</p>
+        </div>
+    </section>
+
+    <section id="tema3">
+        <div class="contenedor-imagen3">
+            <img src="recursos/Ejecucion.jpg" alt="">
+        </div>
+        <div class="tema3">
+            <p class="titulo-seccion">Execution Error</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>These errors are more difficult to detect and correct (as it is the logic as such of our application). There are auxiliary tools to search for these errors, <br>
+            they are called debuggers (debuggers). Even after obtaining an executable file, errors may occur during code execution.</p>
+            <p>Even after obtaining an executable file, errors may occur during code execution.</p>
+        </div>
+    </section>
+
+    <section id="tema4">
+        <div class="contenedor-imagen4">
+            <img src="recursos/Proceso de diseño.jpg" alt="">
+        </div>
+        <div class="tema4">
+            <p class="titulo-seccion">Design Error</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>The most difficult mistakes to correct and prevent. If we have been wrong in designing our algorithm, <br>
+                there will be no program that can help us correct them, <br></p>
+            <p>because it is impossible for a program to determine what we are trying to achieve or a program that makes any applications for us.</p>
+        </div>
+    </section>
+
+    <section id="tema5">
+        <div class="contenedor-imagen5">
+            <img src="recursos/enlazado.jpg" alt="">
+        </div>
+        <div class="tema5">
+            <p class="titulo-seccion">Linking Error</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>The linker program may also encounter errors. They usually refer to functions that are not defined in any of the object files or libraries. <br></p>
+            <p>We may have forgotten to include a library or an object file, or we may have forgotten to define a function or variable, or we may have done it wrong. <br>
+                Broken internal links: This may be due to an incorrect formatted URL. <br>
+                Broken external links: they point to an external site that no longer exists or has been moved and has not implemented any redirection.<br>
+                Too many links on the page: The more links there are, the lower the SEO value
+            </p>
+        </div>
+    </section>
+
+    <section id="tema6">
+        <div class="contenedor-imagen6">
+            <img src="recursos/Integridad.png" alt="">
+        </div>
+        <div class="tema6">
+            <p class="titulo-seccion">Integrity Error</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>People who log in can make mistakes, leading to variations between the original data and the data stored in a system. <br>
+                Similarly, people can make mistakes during the transfer or electronic copy of data, making disparity between different versions or references to a file. <br>
+                If the system applies integrity to the data, it will prevent the user from making these errors.  <br></p>
+            <p>Maintaining data integrity means ensuring that data remains intact and unchanged throughout its entire life cycle.
+            </p>
+        </div>
+    </section>
+
+    <section id="tema7">
+        <div class="contenedor-imagen7">
+            <img src="recursos/Grafos!.png" alt="">
+        </div>
+        <div class="tema7">
+            <p class="titulo-seccion">Technique of Cause-Effect Graphs</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p>It is a technique that allows the tester to validate complex sets of actions and conditions. Cause-effect graphs represent the logical relationship between different causes and possible effects.  <br>
+                For this we list the causes (user inputs or actions) and the effects <br>
+                (expected system outputs or actions), and then join indicating relationships between them.  <br></p>
+            <p>It is a test case technique that provides a concise representation of the logical conditions and their corresponding actions.
+            </p>
+        </div>
+    </section>
+    <section id="tema7">
+        <div class="contenedor-imagen7">
+            <img src="recursos/11.png" alt="">
+        </div>
+        <div class="tema7">
+            <p class="titulo-seccion">The technique follows four steps:</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p> Causes (input conditions) and effects (actions) are listed for a module, assigning an identifier to each of them. <br>
+                A Cause-Effect graph is developed. <br>
+                The graph becomes a decision table. <br>
+                The decision table rules are converted to test cases.<br>
+            </p>
+            <p>The logical operators shown in the image on the left are used to create the graphs.</p>
+        </div>
+    </section>
+    <section id="tema8">
+        <div class="contenedor-imagen8">
+            <img src="recursos/conc.jpg" alt="">
+        </div>
+        <div class="tema8">
+            <p class="titulo-seccion">Conclusion</p>
+            <!-- <h2>Hola, Soy <span>Lucas Perez</span> </h2>
+            <h3>Desarrollador Web</h3>-->
+            <p> How can we avoid producing defective programs? In reality there is no form, <br>
+                programming largely works with trial and error, <br>
+                somehow you have to check that something works, <br>
+                it is the errors that lead us to acquire a different perception and raise our level of knowledge. <br>
+                We must not forget that it is important to perform a constant quality control <br>
+                where the functionality of the code is tested for a certain period of time in various circumstances, <br>
+                in order to detect the presence of bugs, before it reaches the end user. <br></p>
+            <p>.</p>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container-footer"> 
+        <p>Chavez Ramirez Brandon German</p>
+        <p>Ortega Jimenez Denilson</p>
+        <p>Perez Torres Ivan Gabriel</p>
+        <p>Torres Armas Mey-Lee Mayela</p>
+        <p>Zamora Hernandez Marco Antonio</p>
+       <!---<div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>-->
+        </div> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
